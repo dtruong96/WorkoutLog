@@ -11,7 +11,7 @@ import UIKit
 
 class Workout {
     var name = " "
-    var completed = false
+    var bestRecord = false
 }
 
 
