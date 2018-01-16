@@ -11,7 +11,6 @@ import UIKit
 
 class Workout {
     var name = " "
-    var date = " "
     var completed = false
 }
 
