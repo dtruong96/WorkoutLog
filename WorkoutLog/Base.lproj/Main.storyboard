@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pxq-fj-LTN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
         <!--Workout History-->
         <scene sceneID="07i-To-wZs">
             <objects>
-                <tableViewController id="pxq-fj-LTN" sceneMemberID="viewController">
+                <tableViewController id="pxq-fj-LTN" customClass="WorkoutTableViewController" customModule="WorkoutLog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vWH-qX-FU3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,11 +47,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Workout History" id="9i2-AM-LaQ">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="2u5-sf-JLm"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="2u5-sf-JLm">
+                            <connections>
+                                <segue destination="qHI-p2-jqd" kind="show" id="MWe-4r-WNd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="qHI-p2-jqd" kind="show" id="LbV-mU-t4A"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EW-ha-IYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
