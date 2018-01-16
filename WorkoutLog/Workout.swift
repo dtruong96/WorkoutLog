@@ -11,6 +11,9 @@ import UIKit
 
 class Workout {
     var name = " "
+    var weight = " "
+    var reps = " "
+    var date = " "
     var bestRecord = false
 }
 
