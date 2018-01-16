@@ -67,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of1-Fo-zEV">
-                                <rect key="frame" x="116.5" y="132" width="143" height="48"/>
+                                <rect key="frame" x="116" y="132" width="143" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,6 +114,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aR4-df-QBq">
+                                <rect key="frame" x="166" y="559" width="43" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Add"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -130,6 +135,9 @@
                             <constraint firstItem="Wdh-vI-Bhj" firstAttribute="centerX" secondItem="dyf-4j-lej" secondAttribute="centerX" id="lik-fo-BUI"/>
                             <constraint firstItem="ljk-VJ-LHD" firstAttribute="top" secondItem="edO-N2-tdt" secondAttribute="bottom" constant="29" id="mhU-oR-ztE"/>
                             <constraint firstItem="of1-Fo-zEV" firstAttribute="top" secondItem="PbY-S6-Oki" secondAttribute="top" constant="68" id="mpE-ue-bNU"/>
+                            <constraint firstItem="aR4-df-QBq" firstAttribute="top" secondItem="hDB-Dy-5vl" secondAttribute="bottom" constant="20" id="qG9-id-Huh"/>
+                            <constraint firstItem="aR4-df-QBq" firstAttribute="centerX" secondItem="dyf-4j-lej" secondAttribute="centerX" id="u9D-PL-sZz"/>
+                            <constraint firstItem="aR4-df-QBq" firstAttribute="top" secondItem="hDB-Dy-5vl" secondAttribute="bottom" constant="31" id="vUR-E6-VG8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbY-S6-Oki"/>
                     </view>
