@@ -58,7 +58,12 @@ class WorkoutTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return  completedWorkouts.count
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "MenuSegue", sender: nil)
+        
+    }
     
 
 }
