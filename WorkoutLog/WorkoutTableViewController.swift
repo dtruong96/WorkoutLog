@@ -15,7 +15,7 @@ class WorkoutTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createWorkoutExamples()
+        completedWorkouts = createWorkoutExamples()
 
     }
 
@@ -33,7 +33,7 @@ class WorkoutTableViewController: UITableViewController {
         Squats.weight = "200"
         Squats.reps = "3"
         Squats.date = "January 1, 2018"
-        Squats.bestRecord = true
+        Squats.bestRecord = false
         
         return [BenchPress, Squats]
         
@@ -45,9 +45,9 @@ class WorkoutTableViewController: UITableViewController {
         let workoutCell = completedWorkouts[indexPath.row]
         
         if workoutCell.bestRecord {
-            cell.textLabel?.text = "" + workoutCell.name
+            cell.textLabel?.text = "💪" + workoutCell.name + " - " + workoutCell.date
         } else{
-            cell.textLabel?.text = workoutCell.name
+            cell.textLabel?.text = workoutCell.name + " - " + workoutCell.date
         }
         
         return cell
