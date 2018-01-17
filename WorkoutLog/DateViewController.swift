@@ -10,11 +10,13 @@ import UIKit
 
 class DateViewController: UIViewController {
 
+    @IBOutlet var DatePicker: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet var DateAddButton: UIView!
+    
 }

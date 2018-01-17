@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="826.39999999999998" y="60.719640179910051"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise View Controller-->
         <scene sceneID="ytA-yT-iCI">
             <objects>
-                <viewController id="qHI-p2-jqd" sceneMemberID="viewController">
+                <viewController id="qHI-p2-jqd" customClass="ExerciseViewController" customModule="WorkoutLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dyf-4j-lej">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,15 +163,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbY-S6-Oki"/>
                     </view>
+                    <connections>
+                        <outlet property="ExerciseAddButton" destination="dyf-4j-lej" id="nJV-aC-w7H"/>
+                        <outlet property="ExerciseTextField" destination="edO-N2-tdt" id="CYb-dk-yaa"/>
+                        <outlet property="RepsTextField" destination="dYo-aw-uWb" id="ZSx-mE-AE7"/>
+                        <outlet property="WeightTextField" destination="feF-Ug-UX7" id="pnd-7Y-zRr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PT-e8-41C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1588" y="60.719640179910051"/>
         </scene>
-        <!--View Controller-->
+        <!--Date View Controller-->
         <scene sceneID="KYD-ds-6y7">
             <objects>
-                <viewController id="LT4-1h-V8o" sceneMemberID="viewController">
+                <viewController id="LT4-1h-V8o" customClass="DateViewController" customModule="WorkoutLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NAW-DD-5F1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,15 +209,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fwb-8k-V92"/>
                     </view>
+                    <connections>
+                        <outlet property="DateAddButton" destination="NAW-DD-5F1" id="ReY-eY-1GC"/>
+                        <outlet property="DatePicker" destination="NAW-DD-5F1" id="Ycu-cA-85d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuM-Ah-a3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2341.5999999999999" y="62.518740629685162"/>
         </scene>
-        <!--View Controller-->
+        <!--New Record View Controller-->
         <scene sceneID="yTf-Lw-PDr">
             <objects>
-                <viewController id="HqE-A6-FqL" sceneMemberID="viewController">
+                <viewController id="HqE-A6-FqL" customClass="NewRecordViewController" customModule="WorkoutLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ss-OJ-wXN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,6 +247,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fve-oh-fd5"/>
                     </view>
+                    <connections>
+                        <outlet property="FinishButton" destination="wV9-lS-BZz" id="vG6-X7-8SP"/>
+                        <outlet property="YesSwitch" destination="HnP-nK-QkS" id="Q4e-o8-qJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIj-sf-kQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

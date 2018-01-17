@@ -10,10 +10,14 @@ import UIKit
 
 class ExerciseViewController: UIViewController {
 
+    @IBOutlet weak var RepsTextField: NSLayoutConstraint!
+    @IBOutlet weak var WeightTextField: UITextField!
+    @IBOutlet weak var ExerciseTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet var ExerciseAddButton: UIView!
 }
