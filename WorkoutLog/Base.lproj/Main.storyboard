@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="826.39999999999998" y="60.719640179910051"/>
         </scene>
-        <!--View Controller-->
+        <!--Log View Controller-->
         <scene sceneID="uWO-TJ-kNb">
             <objects>
-                <viewController id="aIf-4O-Uhe" sceneMemberID="viewController">
+                <viewController id="aIf-4O-Uhe" customClass="LogViewController" customModule="WorkoutLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pae-a8-ETp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
