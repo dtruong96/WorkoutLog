@@ -61,8 +61,15 @@ class WorkoutTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "MenuSegue", sender: nil)
+        //let workoutEntry = completedWorkouts[indexPath.row]
         
+        performSegue(withIdentifier: "MenuSegue", sender: "💄")
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let workoutHistoryVC = segue.destination as! LogViewController
+        workoutHistoryVC.workoutHistory = sender as! String
     }
     
 
